@@ -1,7 +1,7 @@
 # Project README
 
 ## Overview
-A implementation of the marching cubes algorithm as a graphical representation for a 2D height map.
+A implementation of the marching cubes algorithm as a graphical representation for a 3D map.
 
 ## Features
 - **Marching Cubes**: generating a 3D mesh for the pipeline representing the terrain
@@ -11,7 +11,7 @@ A implementation of the marching cubes algorithm as a graphical representation f
 
 ## Project Structure
 ```
-Gui_Marching_Cubes/
+Gui_Landscape_Editor/
 ├── build/              # .exe files produced by Main.c
 ├── src/                # Source code directory
 │   └── Main.c          # Entry point of the application
@@ -34,7 +34,7 @@ These commands will set up and compile the project, producing the necessary exec
 
 ### Building on Linux
 ```sh
-cd Gui_Marching_Cubes/
+cd Gui_Landscape_Editor/
 make -f Makefile.linux all
 
 # To run the application:
@@ -43,7 +43,7 @@ make -f Makefile.linux all
 
 ### Building on Windows
 ```sh
-cd Gui_Marching_Cubes/
+cd Gui_Landscape_Editor/
 make -f Makefile.windows all
 
 # To run the application:
@@ -52,7 +52,7 @@ make -f Makefile.windows all
 
 ### Building on Wine
 ```sh
-cd Gui_Marching_Cubes/
+cd Gui_Landscape_Editor/
 make -f Makefile.wine all
 
 # To run the application:
@@ -61,7 +61,7 @@ wine build/Main.exe
 
 ### Building for WebAssembly
 ```sh
-cd Gui_Marching_Cubes/
+cd Gui_Landscape_Editor/
 make -f Makefile.web all
 
 # To run the application in a web browser:
