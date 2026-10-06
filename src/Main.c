@@ -147,7 +147,8 @@ void Update(AlxWindow* w){
 
 		if(Landscape_Bounce(landscape,intersec_pos)){
 			//Landscape_Set(landscape,intersec_pos,1.0);
-			Circle3_RenderX(landscape,FIELDX,FIELDY,FIELDZ,intersec_pos,radius,1.0f);
+			//Circle3_RenderX(landscape,FIELDX,FIELDY,FIELDZ,intersec_pos,radius,1.0f);
+			Circle3_RenderXWire(landscape,FIELDX,FIELDY,FIELDZ,intersec_pos,radius,1.0f);
 		}
 	}else if(Stroke(ALX_MOUSE_R).DOWN){
 		Vec3 intersec_pos = (Vec3){ 0.0f,0.0f,0.0f };
@@ -163,7 +164,8 @@ void Update(AlxWindow* w){
 
 		if(Landscape_Bounce(landscape,intersec_pos)){
 			//Landscape_Set(landscape,intersec_pos,-1.0);
-			Circle3_RenderX(landscape,FIELDX,FIELDY,FIELDZ,intersec_pos,radius,-1.0);
+			//Circle3_RenderX(landscape,FIELDX,FIELDY,FIELDZ,intersec_pos,radius,-1.0);
+			Circle3_RenderXWire(landscape,FIELDX,FIELDY,FIELDZ,intersec_pos,radius,-1.0f);
 		}
 	}
 
